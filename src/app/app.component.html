@@ -1,0 +1,50 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<app-header-ngquocth [ngquocthChild] = 'PERngquocth'></app-header-ngquocth> <!--[child var] = 'parent var'--->
+
+
+<!-------------------------------------------------------------------------------------->
+
+<mat-tab-group mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4" [ngStyle]="{textAlign: 'center'}">
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="menu"></mat-icon>
+      Tab 1 ngquocth (991720991)
+    </ng-template>
+
+     <app-ngquocth-about [ngquocthMe] = 'PERngquocth'></app-ngquocth-about>  <!--remember to add components into app.component.html after created it!!-->
+                                            <!--REMEMBER: [child variable from outside component] = 'child variable in app.component.ts'-->
+  </mat-tab>
+
+
+
+<!-------------------------------------------------------------------------------------->
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="bolt"></mat-icon>
+      Tab 2 ngquocth (991720991)
+
+    </ng-template>
+
+    <app-ngquocth-country [ngquocthData] = 'CTRYngquocth'></app-ngquocth-country>
+
+  </mat-tab>
+
+
+<!-------------------------------------------------------------------------------------->
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="favorite"></mat-icon>
+      Tab 3 ngquocth (991720991)
+    </ng-template>
+
+    <app-ngquocth-pics [picPER] = 'PERngquocth' [picCTR] = 'CTRYngquocth'></app-ngquocth-pics>
+
+  </mat-tab>
+
+
+</mat-tab-group>
+
+<!-------------------------------------------------------------------------------------->
